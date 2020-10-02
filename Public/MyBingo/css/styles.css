@@ -1,0 +1,16 @@
+body {
+  font-family: "Courier New", monospace;
+}
+
+table {
+  margin: 30px auto;
+}
+
+th, td {
+  background: pink;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  align-content: center;
+  line-height: 40px;
+}

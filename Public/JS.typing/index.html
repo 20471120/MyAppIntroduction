@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+  <title>Tomo's typing game</title>
+</head>
+<body>
+
+  <p id="target">英語の悪口タイピング<br><br>[Click to start]</p>
+  <h id="perf"></h>
+  <h id="exp"></h>
+  <p id="caution">
+    *制限時間は１分間です<br>*単語間にスペースの入力を忘れないで下さい。
+  </p>
+  <p class="info" id="info">
+    Letter count: <span id="score">0</span>
+    Miss count: <span id="miss">0</span>
+    Time left: <span id="timer">0.00</span>
+  </p>
+
+  <div id="result" class="hidden">
+    <p id="scored"></p>
+    <p id="missed"></p>
+    <p id="accurate"></p>
+    <p id="message"></p>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

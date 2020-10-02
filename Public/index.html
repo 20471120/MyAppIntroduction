@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introduction My App</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="text-center bg-info ">
+    <div class="container">
+      <div class="info">
+        <h1>アプリ紹介</h1>
+        <p>私の作ったアプリを紹介します。<br>ほぼ模倣品といってもいいクオリティですがご容赦ください。</p>
+      </div>
+      <div class="pic">
+        <img src="app.PNG" height="300px">
+      </div>
+    </div>
+  </header>
+
+  <section class="features">
+    <h1 class="init text-center">アプリ紹介</h1>
+    <div class="container">
+      <section rolo="omikuji">
+        <div class="info">
+          <h1 class="app1">1.おみくじ</h1>
+          <p>画面をタッチするとおみくじが引けます。因みに大吉が出る確率は5%!</p>
+        </div>
+        <div class="text-center">
+          <img id="omikujipic" class="mx-auto d-block" src="omikuji.png" width="90%">
+          <a id="omikuji" href="MyOmikuji/index.html">[やってみる]</a>
+        </div>
+      </section>
+    
+      <section rolo="bingo">
+        <div class="info">
+          <h1 class="app1">2.ビンゴ</h1>
+          <p>ビンゴシートを作ってくれます。リロードで中の数字をランダムに変更できます。</p>
+        </div>
+        <div class="text-center">
+          <img id="bingopic" class="mx-auto d-block" src="bingo.png" width="80%">
+          <a id="bingo" href="MyBingo/index.html">[やってみる]</a>
+        </div>
+      </section>
+    
+      <section rolo="calc">
+        <div class="info">
+          <h1 class="app1">3.電卓</h1>
+          <p>web上で簡単な計算ができます。</p>
+        </div>
+        <div class="text-center">
+          <img class="mx-auto d-block" src="calc.png" width="80%">
+          <a id="calc" href="jsCalc/index.html">[やってみる]</a>
+      </section>
+    
+      <section rolo="typing">
+        <div class="info"> 
+          <h1 class="app1">4.タイピングゲーム</h1>
+          <p>英語の悪口のタイピングゲームです。<br>なかなか面白いので、意味を考えながら楽しんでください。</p>
+        </div>
+        <div class="text-center">
+          <img class="mx-auto d-block" src="typing.png" width="100%">
+          <a id="typing" href="JS.typing/index.html">[やってみる]</a>
+        </div>
+      </section>
+
+      <section rolo="englishquiz">
+        <div class="info"> 
+          <h1 class="app1">5.英文法４択クイズ</h1>
+          <p>英語の文法の４択クイズです。問題は全部で５問です。難易度は低めなので満点を目指しましょう。</p>
+        </div>
+        <div class="text-center">
+          <img class="mx-auto d-block" src="quiz.png" width="100%">
+          <a id="quiz" href="EnglishTest/index.html">[やってみる]</a>
+        </div>
+      </section>
+    
+      <section rolo="count">
+        <div class="info">
+          <h1 class="app1">6.カウントアプリ</h1>
+          <p>色々なものをカウントできるアプリです。</p>
+        </div>
+        <div class="text-center">
+          <img class="mx-auto d-block" src="count.png" width="100%">
+          <a id="count" href="countjs/index.html">[やってみる]</a>
+        </div>
+      </section>
+    </section>
+    </div>
+
+
+  <section class="me bg-warning" role="Myintro">
+    <h1>自己紹介</h1>
+    <li class="text-center">
+      <img src="intro.PNG" class="pic mx-auto d-block">
+      <h2>とものすけ</h2>
+      <p>文系大学３回生</p>
+      <p class="bun">趣味でドットインストールを用いてJS等を使って遊んでいます。今後はwebページやちょっとしたアプリを作っていきたいと思います。<br>またバックエンド側のことも学んでいきたいと思っています。もっと勉強します。</p>
+    </li>
+  </section>
+
+  <footer class="bg-dark text-center">
+    <a href="">[トップへ戻る]</a>
+  </footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

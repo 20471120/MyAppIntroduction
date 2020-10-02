@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>web calc</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <input type="text" id="result">
+  <div>
+    <input type="button" value="1" onclick="edit(this)">
+    <input type="button" value="2" onclick="edit(this)">
+    <input type="button" value="3" onclick="edit(this)">
+    <input type="button" value="+" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="4" onclick="edit(this)">
+    <input type="button" value="5" onclick="edit(this)">
+    <input type="button" value="6" onclick="edit(this)">
+    <input type="button" value="-" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="7" onclick="edit(this)">
+    <input type="button" value="8" onclick="edit(this)">
+    <input type="button" value="9" onclick="edit(this)">
+    <input type="button" value="/" onclick="edit(this)">
+  </div>
+  <div>
+    <input type="button" value="0" onclick="edit(this)">
+    <input type="button" value="." onclick="edit(this)">
+    <input type="button" value="*" onclick="edit(this)">
+    <input type="button" value="=" onclick="calc()">
+  </div>
+  <input type="button" value="back" onclick="back(this)">
+  <input type="button" value="clear" onclick="clearButton()">
+
+  <script language="javascript" type="text/javascript">
+    var result = document.getElementById("result");
+
+    function edit(elem) {
+      result.value = result.value + elem.value;
+    }
+
+    function back(elem) {
+      result.value = result.value.slice(0, -1);
+    }
+
+    function clearButton() {
+      result.value = "";
+    }
+
+    function calc() {
+      result.value = new Function("return " + result.value)();
+    }
+    
+  </script>
+</body>
+</html>
